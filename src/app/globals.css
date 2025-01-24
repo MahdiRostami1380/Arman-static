@@ -2,20 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .section-container {
+    @apply container px-3 mx-auto;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .btn {
+    @apply flex items-center justify-center rounded-xl bg-[#41649F] font-PeydaBold text-white text-[16px] w-full md:w-[191px] py-3 hover:bg-white hover:text-[#41649F] hover:outline hover:outline-1 hover:outline-[#41649F] transition;
+  }
+
+  .videoRight {
+    @apply md:w-[230px] md:h-[237px] md:opacity-70 translate-x-[270px] md:translate-x-[150px];
+  }
+
+  .videoLeft {
+    @apply md:w-[230px] md:h-[237px] md:opacity-70 -translate-x-[270px] md:-translate-x-[150px];
+  }
+
+  .videoCenter {
+    @apply md:w-[378px] md:h-[395px];
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "PeydaLight";
+  src: url("/Fonts/Peyda/Peyda-light.ttf");
+}
+
+@font-face {
+  font-family: "PeydaExtraBold";
+  src: url("/Fonts/Peyda/Peyda-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "PeydaMedium";
+  src: url("/Fonts/Peyda/Peyda-Medium.ttf");
+}
+
+@font-face {
+  font-family: "PeydaBold";
+  src: url("/Fonts/Peyda/Peyda-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PeydaSemiBold";
+  src: url("/Fonts/Peyda/Peyda-SemiBold.ttf");
+}
+
+@keyframes openQuestion {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: #41649f;
+  }
+  100% {
+    background-color: white;
+  }
 }
