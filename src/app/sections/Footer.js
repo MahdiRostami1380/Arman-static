@@ -69,24 +69,24 @@ export default function FooterSection() {
             </Link>
           </div>
           <div className="max-w-[200px] xl:max-w-none">
-            <h4 className="text-base md:text-[18px] font-PeydaSemiBold">
+            <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-7">
               اطلاعات تماس
             </h4>
             <div className="flex flex-col gap-3 md:gap-6">
               <div className="flex gap-3">
-                <img src="./Images/location-icon.svg" alt="location icon" />
+                <img src="./Images/location-icon.svg" alt="location icon" className="w-[17.25px] h-[20px]" />
                 <div className="text-[14px] md:text-base font-PeydaMedium">
                   لورم ایپسوم متن استفاده از طراحان گرافیک است
                 </div>
               </div>
               <div className="flex gap-3">
-                <img src="./Images/email-icon.svg" alt="email icon" />
+                <img src="./Images/email-icon.svg" alt="email icon" className="w-[20px] h-[17px]" />
                 <div className="text-[13px] md:text-base font-PeydaMedium">
                   contact@arman.com
                 </div>
               </div>
               <div className="flex gap-3">
-                <img src="./Images/phone-icon.svg" alt="phone icon" />
+                <img src="./Images/phone-icon.svg" alt="phone icon" className="size-[24px]" />
                 <div className="text-[14px] md:text-base font-PeydaMedium">
                   021 222 40 377
                 </div>
