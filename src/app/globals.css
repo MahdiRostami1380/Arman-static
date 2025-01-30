@@ -60,3 +60,7 @@
     background-color: white;
   }
 }
+
+.grid-template-areas-class {
+  grid-template-areas: "header header" "content content";
+}
