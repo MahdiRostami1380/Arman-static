@@ -3,7 +3,7 @@ import { CardsInfo } from "@/app/data/Cards";
 
 export default function Cards() {
   return (
-    <section className="section-container py-5 md:py-10">
+    <section className="section-container">
       <div className="text-[22px] md:text-[34px] text-center font-PeydaSemiBold tracking-tighter mb-10">
         آرمان در یک نگاه
       </div>
