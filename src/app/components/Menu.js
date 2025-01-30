@@ -8,15 +8,15 @@ export default function Menu() {
   const pathname = usePathname();
   const [menuOpened, setMenuOpened] = useState(false);
 
-  useEffect(() => {
-    if (menuOpened) {
-      window.onscroll = function () {
-        window.scrollTo(0, 0);
-      };
-    } else {
-      window.onscroll = function () {};
-    }
-  }, [menuOpened]);
+  // useEffect(() => {
+  //   if (menuOpened) {
+  //     window.onscroll = function () {
+  //       window.scrollTo(0, 0);
+  //     };
+  //   } else {
+  //     window.onscroll = function () {};
+  //   }
+  // }, [menuOpened]);
   return (
     <>
       <div className="section-container py-[78px] md:py-[70px] lg:py-[59px] flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 z-20">
@@ -58,9 +58,17 @@ export default function Menu() {
         </div>
       </div>
       {menuOpened ? (
-        <div className="absolute top-0 left-0 w-screen h-screen flex z-[100]">
-          <div className="bg-white w-1/2 py-5">
-            <ul className="flex flex-col items-center">
+        <div className="fixed top-0 left-0 w-screen h-screen z-[100]">
+          <div className="bg-white w-full h-full">
+            <button
+              className="bg-[#41649F] p-5 rounded-xl m-6"
+              onClick={() => setMenuOpened(false)}
+            >
+              <div className="w-6 h-[0.5px] bg-white rotate-45"></div>
+              <div className="w-6 h-[0.5px] bg-white -rotate-45"></div>
+              <div></div>
+            </button>
+            <ul className="flex flex-col items-center gap-5 mt-20">
               {MenuItems.map((item) => (
                 <li
                   key={item.link}
@@ -73,10 +81,6 @@ export default function Menu() {
               ))}
             </ul>
           </div>
-          <div
-            className="bg-black bg-opacity-50 w-1/2"
-            onClick={() => setMenuOpened(false)}
-          ></div>
         </div>
       ) : null}
     </>

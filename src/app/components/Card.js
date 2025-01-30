@@ -1,4 +1,4 @@
-export default function ({ subject, description, id, last }) {
+export default function ({ subject, description, id }) {
   return (
     <div
       className={`rounded-lg w-[284px] h-[213px] md:w-[266px] md:h-[289px] hover:shadow-[0_0_30px_-15px_rgba(0,0,0,0.3)] transition flex flex-col gap-2 md:gap-5 items-start px-[20px] tracking-tighter justify-center outline outline-1 hover:outline-none outline-gray-300 md:outline-none`}

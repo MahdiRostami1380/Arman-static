@@ -14,24 +14,22 @@ export default function AboutCarousel() {
     return () => clearInterval(intervalId);
   }, [ontopId]);
   return (
-    <div className="w-[296px] md:w-[500px] relative h-[350px] md:h-[500px] relative">
+    <div className="w-[296px] md:w-[500px] h-[296px] md:h-[500px] relative">
       <div
         className={`${
           ontopId === 1
-            ? "z-10 w-[241px] h-[265px] md:w-[340px] md:h-[374px] -translate-x-[55px] translate-y-[85px] md:-translate-x-[110px] md:translate-y-[120px]"
-            : "z-0 opacity-95 md:w-[340px] md:h-[374px] scale-90 translate-x-[12px] -translate-y-[13px] md:translate-x-[18px] md:-translate-y-[18px]"
-        } bg-[url('/Images/about1.jfif')] w-[241px] h-[265px] bg-cover absolute rounded-lg duration-500`}
-        style={{ backgroundPositionX: "70%" }}
+            ? "z-10 -translate-x-[78.7px] translate-y-[54px] md:-translate-x-[174px] md:translate-y-[137px]"
+            : "z-0 opacity-95"
+        } bg-[url('/Images/about1.jpg')] w-[217.3px] h-[243px] md:w-[326px] md:h-[363px] bg-cover absolute rounded-lg duration-500`}
       ></div>
       <div
         className={`${
           ontopId === 2
-            ? "z-10 w-[218px] h-[272px] md:w-[306px] md:h-[383px] -translate-x-[77px] translate-y-[78px]  md:-translate-x-[140px] md:translate-y-[110px]"
-            : "z-0  opacity-95 md:w-[306px] md:h-[383px] scale-90 translate-x-[11px] -translate-y-[13px] md:translate-x-[15px] md:-translate-y-[18px]"
-        } bg-[url('/Images/about2.jfif')] w-[218px] bg-cover h-[272px] absolute rounded-lg duration-500`}
-        style={{ backgroundPositionX: "45%" }}
+            ? "z-10 -translate-x-[78.7px] translate-y-[54px] md:-translate-x-[174px] md:translate-y-[137px]"
+            : "z-0  opacity-95"
+        } bg-[url('/Images/about2.jpg')] w-[217.3px] h-[243px] md:w-[326px] md:h-[363px] bg-cover absolute rounded-lg duration-500`}
       ></div>
-      <div className="flex gap-3 absolute left-1/2 -translate-x-1/2 -bottom-8 md:-bottom-5">
+      <div className="flex gap-3 absolute left-1/2 -translate-x-1/2 -bottom-8">
         <button
           className={`cursor-pointer size-4 rounded-full outline outline-1 outline-[#41649F] outline-offset-2 ${
             ontopId === 1 ? "bg-[#41649F]" : null

@@ -33,7 +33,9 @@ export default function AccordionItem({ q, a, index }) {
             </div>
             {openedQ === index ? (
               <div className="font-PeydaLight text-[#4F4F4F] text-[12px] md:text-base mt-6">
-                {a}
+                {a.map((answer, i) => (
+                  <p key={i}>{answer}</p>
+                ))}
               </div>
             ) : null}
           </div>

@@ -31,39 +31,39 @@ export default function Carousel() {
   }
 
   return (
-    <div className="flex items-center justify-center relative lg:translate-x-[30px] overflow-x-hidden w-screen md:w-[500px] h-[320px] md:h-[520px] md:overflow-x-visible">
+    <div className="flex items-center justify-center relative lg:translate-x-[30px] overflow-x-hidden w-screen md:w-[378px] h-[249px] md:h-[378px] md:overflow-x-visible">
       <div
-        className={`${firstZ()} w-[249px] h-[260px] duration-500 rounded-lg absolute overflow-hidden ${
+        className={`${firstZ()} w-[249px] h-[249px] duration-500 rounded-lg absolute overflow-hidden ${
           first() === 1
-            ? "md:w-[378px] md:h-[395px]"
+            ? "md:w-[378px] md:h-[378px]"
             : first() === 0
             ? "videoRight"
             : "videoLeft"
         }`}
       >
-        <img src="./Images/video3.jfif" alt="video" />
+        <img src="./Images/video3.jpg" alt="video" />
       </div>
       <div
-        className={`${secondZ()} w-[249px] h-[260px] duration-500 rounded-lg absolute overflow-hidden ${
+        className={`${secondZ()} w-[249px] h-[249px] duration-500 rounded-lg absolute overflow-hidden ${
           currentVideoId === 1
-            ? "md:w-[378px] md:h-[395px]"
+            ? "md:w-[378px] md:h-[378px]"
             : currentVideoId === 0
             ? "videoRight"
             : "videoLeft"
         }`}
       >
-        <img src="./Images/video2.jfif" alt="video" />
+        <img src="./Images/video2.jpg" alt="video" />
       </div>
       <div
-        className={`${thirdZ()} w-[249px] h-[260px] duration-500 rounded-lg absolute overflow-hidden ${
+        className={`${thirdZ()} w-[249px] h-[249px] duration-500 rounded-lg absolute overflow-hidden ${
           third() === 1
-            ? "md:w-[378px] md:h-[395px]"
+            ? "md:w-[378px] md:h-[378px]"
             : third() === 0
             ? "videoRight"
             : "videoLeft"
         }`}
       >
-        <img src="./Images/video1.jfif" alt="video" className="h-full" />
+        <img src="./Images/video1.jpg" alt="video" className="h-full" />
       </div>
       <button
         type="button"

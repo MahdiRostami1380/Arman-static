@@ -12,11 +12,11 @@
   }
 
   .videoRight {
-    @apply md:w-[230px] md:h-[237px] md:opacity-70 translate-x-[270px] md:translate-x-[150px];
+    @apply md:w-[230px] md:h-[237px] md:opacity-90 translate-x-[270px] md:translate-x-[150px];
   }
 
   .videoLeft {
-    @apply md:w-[230px] md:h-[237px] md:opacity-70 -translate-x-[270px] md:-translate-x-[150px];
+    @apply md:w-[230px] md:h-[237px] md:opacity-90 -translate-x-[270px] md:-translate-x-[150px];
   }
 
   .videoCenter {
