@@ -24,7 +24,7 @@ export default function FooterSection() {
           </div>
           <Download />
         </div>
-        <div className="max-w-[200px] xl:max-w-none justify-self-start md:justify-self-auto">
+        <div className="max-w-[200px] xl:max-w-none justify-self-start sm:justify-self-auto">
           <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-7">
             اطلاعات تماس
           </h4>
@@ -84,7 +84,7 @@ export default function FooterSection() {
             درباره آرمان
           </Link>
         </div>
-        <div className="flex flex-col gap-4 justify-self-end md:justify-self-auto">
+        <div className="flex flex-col gap-4 justify-self-end sm:justify-self-auto">
           <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-2 md:mb-3">
             دسترسی سریع
           </h4>
