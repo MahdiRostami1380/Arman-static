@@ -18,14 +18,14 @@ export default function AboutCarousel() {
       <div
         className={`${
           ontopId === 1
-            ? "z-10 -translate-x-[78.7px] translate-y-[54px] md:-translate-x-[174px] md:translate-y-[137px]"
+            ? "z-10 -translate-x-[78.7px] translate-y-[53px] md:-translate-x-[174px] md:translate-y-[137px]"
             : "z-0 opacity-95"
         } bg-[url('/Images/about1.jpg')] w-[217.3px] h-[243px] md:w-[326px] md:h-[363px] bg-cover absolute rounded-lg duration-500`}
       ></div>
       <div
         className={`${
           ontopId === 2
-            ? "z-10 -translate-x-[78.7px] translate-y-[54px] md:-translate-x-[174px] md:translate-y-[137px]"
+            ? "z-10 -translate-x-[78.7px] translate-y-[53px] md:-translate-x-[174px] md:translate-y-[137px]"
             : "z-0  opacity-95"
         } bg-[url('/Images/about2.jpg')] w-[217.3px] h-[243px] md:w-[326px] md:h-[363px] bg-cover absolute rounded-lg duration-500`}
       ></div>

@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className="overflow-x-clip">{children}</body>
+      <body className="overflow-x-hidden">{children}</body>
     </html>
   );
 }

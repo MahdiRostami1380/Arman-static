@@ -4,7 +4,7 @@ import { QandAs } from "@/app/data/Q&As";
 export default function Accordion() {
   return (
     <section className="section-container py-5 md:py-10">
-      <div className="font-PeydaSemiBold text-center text-[22px] md:text-[34px] mb-10 mt-4">
+      <div className="font-PeydaSemiBold text-center text-[22px] md:text-[34px] mb-10 mt-7">
         سوالات متداول
       </div>
       <div className="flex flex-col gap-5">

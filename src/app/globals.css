@@ -8,19 +8,19 @@
   }
 
   .btn {
-    @apply flex items-center justify-center rounded-xl bg-[#41649F] font-PeydaBold text-white text-[16px] w-full md:w-[191px] py-3 hover:bg-white hover:text-[#41649F] hover:outline hover:outline-1 hover:outline-[#41649F] transition;
+    @apply flex items-center justify-center rounded-xl bg-[#41649F] font-PeydaBold text-white w-full md:w-[191px] py-3 hover:bg-white hover:text-[#41649F] hover:outline hover:outline-1 hover:outline-[#41649F] transition;
   }
 
   .videoRight {
-    @apply md:w-[230px] md:h-[237px] md:opacity-90 translate-x-[270px] md:translate-x-[150px];
+    @apply md:w-[230px] md:h-[230px] md:opacity-90 translate-x-[270px] md:translate-x-[165px];
   }
 
   .videoLeft {
-    @apply md:w-[230px] md:h-[237px] md:opacity-90 -translate-x-[270px] md:-translate-x-[150px];
+    @apply md:w-[230px] md:h-[230px] md:opacity-90 -translate-x-[270px] md:-translate-x-[165px];
   }
 
   .videoCenter {
-    @apply md:w-[378px] md:h-[395px];
+    @apply md:w-[378px] md:h-[378px];
   }
 }
 

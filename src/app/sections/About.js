@@ -2,9 +2,9 @@ import AboutCarousel from "../components/AboutCarousel";
 
 export default function About() {
   return (
-    <section className="section-container flex flex-col-reverse lg:flex-row justify-between items-center py-5 md:py-10 gap-6 lg:gap-0">
+    <section className="section-container flex flex-col-reverse lg:flex-row justify-between items-center py-5 md:py-10 gap-7 lg:gap-0">
       <AboutCarousel />
-      <div className="flex flex-col gap-6 md:gap-6 items-start w-full lg:max-w-[480px] xl:max-w-[750px] 2xl:max-w-[900px]">
+      <div className="flex flex-col gap-7 items-start w-full lg:max-w-[480px] xl:max-w-[730px] 2xl:max-w-[900px]">
         <div className="text-[#41649F] text-[22px] md:text-3xl font-PeydaSemiBold">
           درباره طرح آرمان
         </div>
@@ -20,9 +20,7 @@ export default function About() {
           جهت تحقق اهداف فوق با همکاری و هم‌افزایی ائمه جماعت و مربیان محترم
           فراهم آورد.
         </p>
-        <button type="button" className="btn">
-          ورود / ثبت نام
-        </button>
+        <button className="btn">ورود / ثبت نام</button>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Download() {
   return (
-    <div className="flex justify-center md:justify-start gap-4 flex-wrap w-72 mx-auto md:mx-0 md:w-fit">
+    <div className="flex justify-center gap-2 flex-wrap w-72 mx-auto md:mx-0 md:w-fit">
       <Link
         href={"/"}
         className="flex border border-[#0F9F4A] rounded-lg py-2 justify-center w-32 gap-1"

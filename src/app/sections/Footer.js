@@ -3,8 +3,8 @@ import Download from "../components/Download";
 
 export default function FooterSection() {
   return (
-    <footer className="section-container md:border-t py-5 md:py-10">
-      <div className="flex flex-col lg:flex-row items-center md:justify-between xl:justify-around gap-6">
+    <footer className="md:border-t py-5 md:py-10 px-3 md:px-6 xl:px-10 2xl:px-14">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-10 2xl:gap-20">
         <div className="max-w-[420px] flex flex-col gap-6">
           <img src="./Images/arman2.svg" alt="logo" className="w-fit" />
           <p className="text-[14px] md:text-base font-PeydaMedium">
@@ -21,9 +21,9 @@ export default function FooterSection() {
           </div>
           <Download />
         </div>
-        <div className="flex flex-row-reverse justify-between sm:gap-10 lg:gap-5 xl:gap-[90px] items-start lg:items-center">
-          <div className="hidden lg:flex flex-col gap-6 md:gap-4">
-            <h4 className="text-[18px] md:text-[20px] font-PeydaSemiBold mb-3">
+        <div className="flex flex-row-reverse container justify-between sm:justify-around lg:justify-between items-start lg:items-center">
+          <div className="hidden lg:flex flex-col gap-4">
+            <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-2 md:mb-3">
               دسترسی سریع
             </h4>
             <Link
@@ -45,7 +45,7 @@ export default function FooterSection() {
               درباره آرمان
             </Link>
           </div>
-          <div className="flex flex-col gap-6 md:gap-4">
+          <div className="flex flex-col gap-4">
             <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-2 md:mb-3">
               دسترسی سریع
             </h4>
@@ -89,7 +89,7 @@ export default function FooterSection() {
                   alt="email icon"
                   className="w-[20px] h-[17px]"
                 />
-                <div className="text-[13px] md:text-base font-PeydaMedium">
+                <div className="text-[14px] md:text-base font-PeydaMedium">
                   contact@arman.com
                 </div>
               </div>

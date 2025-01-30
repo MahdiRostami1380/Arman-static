@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function Carousel() {
   const [currentVideoId, setCurrentVideoId] = useState(1);
-  const [increase, setIncrease] = useState(null);
 
   function first() {
     return currentVideoId === 0 ? 2 : currentVideoId - 1;
@@ -27,11 +26,11 @@ export default function Carousel() {
   }
 
   function thirdZ() {
-    return third() === 0 ? "z-30" : third === 1 ? "z-[60]" : "z-20";
+    return third() === 0 ? "z-30" : third() === 1 ? "z-[60]" : "z-20";
   }
 
   return (
-    <div className="flex items-center justify-center relative lg:translate-x-[30px] overflow-x-hidden w-screen md:w-[378px] h-[249px] md:h-[378px] md:overflow-x-visible">
+    <div className="flex items-center justify-center relative overflow-x-hidden w-screen md:w-[578px] h-[249px] md:h-[378px]">
       <div
         className={`${firstZ()} w-[249px] h-[249px] duration-500 rounded-lg absolute overflow-hidden ${
           first() === 1
@@ -63,11 +62,11 @@ export default function Carousel() {
             : "videoLeft"
         }`}
       >
-        <img src="./Images/video1.jpg" alt="video" className="h-full" />
+        <img src="./Images/video1.jpg" alt="video" />
       </div>
       <button
         type="button"
-        className="cursor-pointer absolute z-[70] left-1/2 translate-x-[105px] md:translate-x-[170px] bg-[#41649F] size-11 rounded-lg flex items-center justify-center"
+        className="cursor-pointer absolute z-[70] translate-x-[130px] md:translate-x-[190px] bg-[#41649F] size-11 rounded-lg flex items-center justify-center"
         onClick={() => {
           setCurrentVideoId((currentVideoId + 1) % 3);
         }}
@@ -76,7 +75,7 @@ export default function Carousel() {
       </button>
       <button
         type="button"
-        className="cursor-pointer absolute z-[70] left-1/2 -translate-x-[150px] md:-translate-x-[215px] bg-[#41649F] size-11 rounded-lg flex items-center justify-center"
+        className="cursor-pointer absolute z-[70] -translate-x-[130px] md:-translate-x-[190px] bg-[#41649F] size-11 rounded-lg flex items-center justify-center"
         onClick={() => {
           if (currentVideoId == 0) setCurrentVideoId(2);
           else setCurrentVideoId(currentVideoId - 1);
