@@ -6,7 +6,7 @@ export default function FooterSection() {
     <footer className="md:border-t py-5 md:py-10 px-3 md:px-6 xl:px-10 2xl:px-14">
       <div className="grid-template-areas-class justify-items-center  grid grid-cols-2 gap-y-6 lg:flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div
-          className="max-w-[420px] flex flex-col gap-6"
+          className=" max-w-full md:max-w-[420px] flex flex-col gap-6"
           style={{ gridArea: "header" }}
         >
           <img src="./Images/arman2.svg" alt="logo" className="w-fit" />
@@ -24,7 +24,7 @@ export default function FooterSection() {
           </div>
           <Download />
         </div>
-        <div className="max-w-[200px] xl:max-w-none justify-self-start">
+        <div className="max-w-[200px] xl:max-w-none justify-self-start md:justify-self-auto">
           <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-7">
             اطلاعات تماس
           </h4>
@@ -84,7 +84,7 @@ export default function FooterSection() {
             درباره آرمان
           </Link>
         </div>
-        <div className="flex flex-col gap-4 justify-self-end">
+        <div className="flex flex-col gap-4 justify-self-end md:justify-self-auto">
           <h4 className="text-base md:text-[18px] font-PeydaSemiBold mb-2 md:mb-3">
             دسترسی سریع
           </h4>
